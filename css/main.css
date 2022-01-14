@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', 'Manrope', 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------Utility Classes------------------- */
+:root {
+  --button-background: #e02c6d;
+  --footer-background: #0a0826;
+  --card-background: #ffffff;
+  --header-text-color: #3a3a3a;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.button {
+  color: #fff;
+  background-color: var(--button-background);
+  border-radius: 2.5625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 0.6rem 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.showcase-area .fa-arrow-right {
+  margin-left: 8px;
+}
+
+/* -----------------Showcase Section----------------- */
+.showcase-area {
+  padding: 5rem 0;
+}
+
+.showcase-container {
+  display: grid;
+  gap: 8rem;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.showcase-content h1 {
+  font-weight: bold;
+  font-size: 3.25rem;
+  line-height: 4.375rem;
+  color: var(--header-text-color);
+}
+
+.showcase-content p {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #3a3a3a;
+  margin: 0.8rem 0 1.5rem;
+}
+
+.showcase-image img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.showcase-image img:hover {
+  transform: scale(1.2);
+}
+
+/* ------------------Collection Section----------------- */
+.collection-area {
+  padding: 5rem 3rem;
+}
+
+.collection-area h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 4.375rem;
+  color: var(--header-text-color);
+  text-align: center;
+  padding: 0 0 2rem;
+}
+
+.card-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: var(--card-background);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: #18191f;
+  margin: 8px 0 5px;
+}
+
+.card h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.card > .ratings .fa-star {
+  color: #fb8200;
+  font-size: 12px;
+}
+
+.card > .ratings > small {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.375rem;
+  letter-spacing: 0.1px;
+  color: #5e6366;
+  margin-left: 8px;
+}
+
+.card > p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.25rem;
+  letter-spacing: 0.018em;
+  color: #787885;
+}
+
+.more-collection {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0 0 0;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.more-collection a {
+  color: rgba(224, 44, 109, 0.87);
+}
+
+.more-collection .fa-arrow-right {
+  margin-left: 3px;
+}
+
+/* -----------------Testimonial Section---------------- */
+.testimonial-area {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.testimonial-area h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #0a0826;
+}
+
+.border {
+  width: 200px;
+  height: 5px;
+  background: #fb8200;
+  margin: 26px auto;
+}
+
+.testimonial-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.testimonial:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.stars {
+  color: #fb8200;
+  margin-bottom: 20px;
+}
+
+/* -----------------Footer Section------------------ */
+footer {
+  height: 250px;
+  background-color: var(--footer-background);
+}
+
+.footer-content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+.footer-content h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.25rem;
+  color: #ffffff;
+}
+
+.footer-content p {
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: #d9dbe1;
+}
+
+.social-icon > i {
+  background: #22213c;
+  color: #fff;
+  margin: 1rem 0.6rem 0 0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+/* ---------------Responsiveness--------------- */
+@media (max-width: 1215px) {
+  /* -----Showcase Section----- */
+  .showcase-container {
+    gap: 7rem;
+    grid-template-columns: 1.4fr 1fr;
+  }
+
+  .showcase-content h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 980px) {
+  /* -----Showcase Section----- */
+  .showcase-container {
+    gap: 2rem;
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  .showcase-content h1 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (max-width: 850px) {
+  /* -----Showcase Section----- */
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  .showcase-content {
+    order: 1;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  /* -----Collection Section----- */
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* -----Collection Section----- */
+  .collection-area {
+    padding: 5rem 0;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .card img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 980px) {
+  /* -----Testimonial Section----- */
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .showcase-container,
+  .card,
+  .testimonial {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
