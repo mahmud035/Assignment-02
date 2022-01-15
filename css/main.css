@@ -90,6 +90,11 @@ nav {
   color: #3a3a3a;
 }
 
+.fa-search,
+.fa-shopping-cart {
+  font-size: 1.2rem;
+}
+
 /* -----------------Showcase Section----------------- */
 .showcase-area {
   padding: 5rem 0;
