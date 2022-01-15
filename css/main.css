@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3 {
@@ -57,6 +61,33 @@ h3 {
 
 .showcase-area .fa-arrow-right {
   margin-left: 8px;
+}
+
+/* ---------------Navigation---------------- */
+nav {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #3a3a3a;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation a {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #3a3a3a;
 }
 
 /* -----------------Showcase Section----------------- */
@@ -308,6 +339,15 @@ footer {
 }
 
 @media (max-width: 980px) {
+  /* -----Navigation----- */
+  .navigation {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
   /* -----Showcase Section----- */
   .showcase-container {
     gap: 2rem;
@@ -342,7 +382,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   /* -----Collection Section----- */
   .collection-area {
     padding: 5rem 0;
@@ -376,6 +416,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .brand-name {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
   .showcase-container,
   .card,
   .testimonial {
